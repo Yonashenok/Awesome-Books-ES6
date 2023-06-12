@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "index.html"
   },
   "keywords": [],
   "author": "yonas",
@@ -21,6 +21,7 @@
     "stylelint-scss": "^3.21.0"
   },
   "dependencies": {
+    "live-server": "^1.2.2",
     "luxon": "^3.3.0"
   }
 }
