@@ -10,7 +10,7 @@ const createBookList = (books) => {
         <p>"${book.title}" by ${book.author}</p>
         <button class="btn-remove" data-remove="${book.id}" >remove</button>
     </li>
-    `
+    `,
     )
     .join('');
 
