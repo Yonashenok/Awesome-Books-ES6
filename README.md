@@ -121,7 +121,7 @@ Install this project with:
 To run the project, execute the following command:
 
 ```sh
-  npm run dev
+   live-server
 ```
 
 ### Run tests
@@ -139,7 +139,7 @@ To run tests, run the following command:
 You can deploy this project using:
 
 ```sh
-  npm run dev
+  live-server
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
