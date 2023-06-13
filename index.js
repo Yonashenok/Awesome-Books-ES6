@@ -8,9 +8,9 @@ const init = () => {
   renderBooksLocal();
   setTimeDate();
   setInterval(setTimeDate, 100);
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    formSubmitHandler();
-  });
 };
 init();
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  formSubmitHandler();
+});
