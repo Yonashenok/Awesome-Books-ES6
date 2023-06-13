@@ -1,17 +1,17 @@
 import createBookList, { booksContainer } from './createBookList.js';
-import { updateBooks } from './getLocalStorage.js';
 import saveToLocalStorage from './setLocalStorage.js';
+import getLocalStorage from './getLocalStorage.js';
 
 const title = document.getElementById('title');
 const author = document.getElementById('author');
-const books = updateBooks;
-
 const resetForm = () => {
   title.value = '';
   author.value = '';
 };
 
 const formSubmitHandler = () => {
+  const books = getLocalStorage();
+
   books.push({
     title: title.value,
     author: author.value,
@@ -19,8 +19,8 @@ const formSubmitHandler = () => {
   });
 
   booksContainer.innerHTML = '';
-  createBookList(books);
   resetForm();
   saveToLocalStorage(books);
+  createBookList();
 };
 export default formSubmitHandler;

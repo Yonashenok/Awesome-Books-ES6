@@ -1,10 +1,3 @@
-import createBookList from './createBookList.js';
+const getLocalStorage = () => JSON.parse(localStorage.getItem('books')) || [];
 
-export const updateBooks = [];
-export const renderBooksLocal = () => {
-  const savedItem = localStorage.getItem('books');
-  if (!savedItem) return;
-  const bookList = JSON.parse(savedItem);
-  createBookList(bookList);
-  updateBooks.push(...bookList);
-};
+export default getLocalStorage;
