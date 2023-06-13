@@ -7,7 +7,7 @@ const form = document.getElementById('form');
 const init = () => {
   renderBooksLocal();
   setTimeDate();
-  setInterval(setTimeDate, 100);
+  setInterval(setTimeDate, 1000);
 };
 init();
 form.addEventListener('submit', (e) => {
